@@ -18,7 +18,7 @@ $feed = new SimplePie();
 // Set which feed to process.
 $feed->set_feed_url('http://detroit.activatehub.org/events.atom');
 
-// Run SimplePie.
+// Run SimplePie. test
 $feed->init();
  
 // This makes sure that the content is sent to the browser as text/html and the UTF-8 character set (since we didn't change it).

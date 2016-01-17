@@ -1364,10 +1364,10 @@ class SimplePie
 					$this->data['build'] = SIMPLEPIE_BUILD;
 
 					// Cache the file if caching is enabled
-					if ($cache && !$cache->save($this))
+					/*if ($cache && !$cache->save($this))
 					{
 						trigger_error("$this->cache_location is not writeable. Make sure you've set the correct relative or absolute path, and that the location is server-writable.", E_USER_WARNING);
-					}
+					}*/
 					return true;
 				}
 			}

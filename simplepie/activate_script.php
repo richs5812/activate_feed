@@ -1,5 +1,4 @@
 <?php
- //testing remote access
 // Make sure SimplePie is included. You may need to change this to match the location of autoloader.php
 // For 1.0-1.2:
 date_default_timezone_set('America/Detroit');
@@ -11,7 +10,7 @@ $todaysDate = date('l, F d, Y');
 #require_once('../simplepie.inc');
 // For 1.3+:
 require_once('autoloader.php');
- 
+//will this show up remotely?
 // We'll process this feed with all of the default options.
 $feed = new SimplePie();
  

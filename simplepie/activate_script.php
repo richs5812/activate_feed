@@ -3,7 +3,7 @@
 // Make sure SimplePie is included. You may need to change this to match the location of autoloader.php
 // For 1.0-1.2:
 date_default_timezone_set('America/Detroit');
-
+//2nd test
 $todaysDate = date('l, F d, Y');
 //echo $todaysDate;
 //echo gettype($todaysDate);

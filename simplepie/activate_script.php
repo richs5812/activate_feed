@@ -1,5 +1,5 @@
 <?php
- 
+ //testing remote access
 // Make sure SimplePie is included. You may need to change this to match the location of autoloader.php
 // For 1.0-1.2:
 date_default_timezone_set('America/Detroit');
@@ -18,7 +18,7 @@ $feed = new SimplePie();
 // Set which feed to process.
 $feed->set_feed_url('http://detroit.activatehub.org/events.atom');
 
-// Run SimplePie. test
+// Run SimplePie.
 $feed->init();
  
 // This makes sure that the content is sent to the browser as text/html and the UTF-8 character set (since we didn't change it).

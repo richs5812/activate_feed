@@ -32,7 +32,7 @@ foreach ($feed->get_items() as $item) {
 	$description = addslashes($item->get_description());
 	$link = $item->get_permalink();
 	$title = addslashes($item->get_title());
-	$pubDate = $item->get_date('D, d M Y H:i:s T');
+	$pubDate = date('D, d M Y H:i:s T');
 
 	$pos = strpos($description, $todaysDate);
 

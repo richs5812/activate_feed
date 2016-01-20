@@ -29,9 +29,9 @@ Here, we'll loop through all of the items in the feed, and $item represents the 
 */
 foreach ($feed->get_items() as $item) {
 
-	$description = addslashes($item->get_description());
+	$description = $item->get_description();
 	$link = $item->get_permalink();
-	$title = addslashes($item->get_title());
+	$title = $item->get_title();
 	$pubDate = date('D, d M Y H:i:s T');
 
 	$pos = strpos($description, $todaysDate);

@@ -33,7 +33,7 @@ foreach ($feed->get_items() as $item) {
 	$link = $item->get_permalink();
 	$title = $item->get_title();
 	$pubDate = date('D, d M Y H:i:s T');
-
+//test change
 	$pos = strpos($description, $todaysDate);
 
 	if ($pos === false) {

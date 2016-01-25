@@ -30,10 +30,26 @@ Here, we'll loop through all of the items in the feed, and $item represents the 
 foreach ($feed->get_items() as $item) {
 
 	$description = $item->get_description();
+	if (strpos($description, '“') !== FALSE) {
+		$description = str_replace("“","\"",$description);
+	}
+	
+	if (strpos($description, '”') !== FALSE) {
+		$description = str_replace("”","\"",$description);
+	}
+	
 	$link = $item->get_permalink();
 	$title = $item->get_title();
+	if (strpos($title, '“') !== FALSE) {
+		$title = str_replace("“","\"",$title);
+	}
+	
+	if (strpos($title, '”') !== FALSE) {
+		$title = str_replace("”","\"",$title);
+	}
+	
 	$pubDate = date('D, d M Y H:i:s T');
-//test change
+
 	$pos = strpos($description, $todaysDate);
 
 	if ($pos === false) {

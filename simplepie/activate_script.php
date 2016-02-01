@@ -3,7 +3,7 @@
 // For 1.0-1.2:
 date_default_timezone_set('America/Detroit');
 
-$todaysDate = date('l, F d, Y');
+$todaysDate = date('l, F j, Y');
 
 #require_once('../simplepie.inc');
 // For 1.3+:

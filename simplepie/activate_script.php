@@ -39,7 +39,7 @@ foreach ($feed->get_items() as $item) {
 	}
 	
 	if (strpos($description, '’') !== FALSE) {
-		$description = str_replace("’","\'",$description);
+		$description = str_replace("’","'",$description);
 	}
 	
 	$link = $item->get_permalink();
@@ -53,7 +53,7 @@ foreach ($feed->get_items() as $item) {
 	}
 	
 	if (strpos($title, '’') !== FALSE) {
-		$title = str_replace("’","\'",$title);
+		$title = str_replace("’","'",$title);
 	}
 	
 	$pubDate = date('D, d M Y H:i:s T');

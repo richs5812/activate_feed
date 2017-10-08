@@ -9,7 +9,7 @@ Below is a basic procedure for setting up an RSS feed that will produce a list o
 	<li>Unzip the downloaded zip file and move the unzipped folder to your server</li>
 	<li>create MySQL database on your server with columns for the following items: Event Title, Event Description, Event Link, and published date</li>
 	<li>create a php script file within the unzipped Simplepie folder on your server to parse Activate! Atom feed events and save today's events to the database (<a href="https://github.com/richs5812/activate_feed/blob/master/simplepie/activate_script.php" target="_blank">see example file for Detroit from this repo</a>)</li>
-	<li>set a cron job to execute the php script once each morning (example: <code>cd activate_feed/simplepie && php-cli activate_script.php >/dev/null 2>&1</code>)</li>
+	<li>set a cron job to execute the php script once each morning (example command: <code>cd activate_feed/simplepie && php-cli activate_script.php >/dev/null 2>&1</code>)</li>
 	<li>create an RSS feed for your database items using PHP (see <code>feeds</code> folder in this repo or read a good tutorial here: <a href="http://www.htmlgoodies.com/beyond/xml/article.php/3691751" target="_blank">http://www.htmlgoodies.com/beyond/xml/article.php/3691751</a>)</li>
 </ol>
 <br />

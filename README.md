@@ -1,7 +1,7 @@
 # activate_feed
 Activate! RSS feed
 
-##Installation Instructions
+## Installation Instructions
 
 Below is a basic procedure for setting up an RSS feed that will produce a list of daily events each morning from an Activate! calendar.
 <ol>
